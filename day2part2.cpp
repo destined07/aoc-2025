@@ -20,6 +20,7 @@ bool invalid(ll i){
             if(ck) return true;
         }
     }
+    
     return false;
 
 }
