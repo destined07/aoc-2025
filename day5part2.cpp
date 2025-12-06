@@ -2,8 +2,6 @@
 using namespace std;
 #define ll long long
 
-// merge overlapping intervals
-
 int main(){
     fstream obj("input.txt");
     string s; 
@@ -27,10 +25,9 @@ int main(){
 
     sort(ranges.begin(),ranges.end());
 
-    ll l=0, r=0, n=ranges.size(), prevSt,prevEnd;
+    ll r=0, n=ranges.size(), prevSt,prevEnd;
 
     while(r<n){
-        l=r;
         prevSt=ranges[r][0], prevEnd=ranges[r][1];
 
         while(r<n && ranges[r][0]<=prevEnd){

@@ -2,12 +2,6 @@
 using namespace std;
 #define ll long long
 
-/*
-    we are given quries before so we may need to preprocess it offline....
-    bruteforces idc lol...
-*/
-
-
 int main(){
     fstream obj("input1.txt");
     string s; 
